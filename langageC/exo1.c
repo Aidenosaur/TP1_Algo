@@ -22,8 +22,6 @@ int main(){
 	pvMonstre=pvMonstre-attaque;
 	
 	printf(" Monstre = %d PV restant, \n Joueur = %d PV restant\n", pvMonstre, pvJ1);
-	
-	printf("TENNIS!!");
 
 
 
