@@ -36,11 +36,14 @@ int main(){
 
 //EXO2 : Attaquer jusqu'à ce que pv monstre=0 + EXO4 : les choix d'actions.
 //Contre attaque monstre
-while(pvJ1!=0 || pvMonstre!=0){
+while(pvJ1!=0 || pvMonstre!=0)
+//faire&& et > 
+{
 	//Pourquoi le code ne s'arrête plus quand un personnage meut ? Mauvais placement du while ?
 	switch (choixAction)
 	{
-	case 1:
+	case 1: 
+			//pas besoin de if dans case
 			if(pvMonstre>0) {
 				printf("Vous devez vite attaquer ! \nVous sortez votre hache et assenez un coup virulent!! \nLe monstre perd 10 PV !\n");
 	
@@ -49,7 +52,9 @@ while(pvJ1!=0 || pvMonstre!=0){
 				printf(" Monstre = %d PV restant, \n Joueur = %d PV restant \n", pvMonstre, pvJ1);
 				
 
-			if(pvMonstre==0) {
+			if(pvMonstre==0) 
+			//plutot <=0
+			{
 				printf("Le Monstre est KO ! Vous avez gagne le combat !!\n");
 				break;
 			} 
